@@ -49,14 +49,4 @@ function myfun1() {
     else if (event.key === "Enter" && a != '') {
         alert("Items not found.");
     }
-
-
-    // Check if the pressed key is the slash key ("/") and the search input is not already focused
-    if (event.key === '/' && document.activeElement !== a) {
-        // Focus on the search input
-        a.focus();
-
-        // Prevent the default behavior of the slash key (e.g., inserting the '/' character in the input)
-        event.preventDefault();
-    }
 }
