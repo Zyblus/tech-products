@@ -1,8 +1,5 @@
 function myfun() {
-
-    a = document.getElementById('extract').value;
-    x = document.getElementById('laptops');
-    y = document.getElementById('phones');
+    a = document.getElementById('value').value;
 
     if (a == "") {
         alert("Search-bar cannot be empty !!!");
@@ -25,10 +22,8 @@ function myfun() {
     }
 }
 
-
 function myfun1() {
-
-    a = document.getElementById('extract').value;
+    a = document.getElementById('value').value;
 
     if (event.key === 'Enter' && a == "") {
         alert("Search-bar cannot be empty !!!");
@@ -50,3 +45,14 @@ function myfun1() {
         alert("Items not found.");
     }
 }
+
+// Check if the pressed key is the slash key ("/") and the search input is not already focused
+document.addEventListener('keydown', function (event) {
+    a = document.getElementById("value");
+    if (event.key === '/' && document.activeElement !== a) {
+        // Prevent the default behavior of the slash key (e.g., inserting the '/' character in the input)
+        event.preventDefault();
+        // Focus on the search input
+        a.focus();
+    }
+});
