@@ -10,7 +10,7 @@ body {
     background-size: 100% 100%;
 }
 
-div.top {
+#top {
     position: relative;
     height: 50px;
     width: 100%;
@@ -18,194 +18,72 @@ div.top {
     color: white;
 }
 
-div.head {
+#head {
     text-transform: uppercase;
     display: flex;
-    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 div.head a {
     text-decoration: none;
 }
 
-div.head a:hover {
-    text-decoration: underline;
-
-}
-
-.navbar {
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
-}
-
-.n {
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
-}
-
-.navs {
-    align-items: center;
-    padding: 12px;
-}
-
-.nav {
-    padding: 12px;
-}
-
-div.nav input {
-    border-radius: 3px;
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
-    border: none;
-}
-
-div.house {
-    padding: 12px;
-    display: flex;
-}
-
-div.list {
-    padding: 12px;
-}
-
-div.gear {
-    padding: 12px;
-}
-
-div.i {
-    padding: 12px;
-}
-
-div.full {
+#nav {
     margin: 10px;
+    text-decoration: none;
     align-items: center;
-    display: flex;
-    width: 550px;
-    height: 30px;
-    border: none;
+    font-size: 22px;
+    padding: 4px;
 }
 
-.select {
-    text-align: center;
-    align-items: center;
-    height: 20px;
-    width: 72px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border: none;
-    cursor: pointer;
-}
-
-.select :hover {
-    color: aquamarine;
-    transition: 1s;
-    border: 2px solid white;
-}
-
-div.mag {
-    color: white;
-    margin: 6px;
-}
-
-.loginaccess.a {
-    color: red;
-}
-
-.search {
-    font-size: 28px;
-    border: none;
-    height: 20px;
-    width: 60%;
-    padding: 6px;
-    border: 3px solid black;
-    border-radius: 16px;
-    background: transparent;
-    backdrop-filter: blur(4px);
-    color: whitesmoke;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.types {
-    border: none;
-    height: 18px;
-    width: 40%;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-
-}
-
-.globe {
-    background-color: red;
-    color: red;
-}
-
-div.hin {
-    padding: 50px;
-    color: orangered;
-    cursor: pointer;
-    display: flex;
-    border: 5px solid ridge;
-}
-
-div.form {
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-div.full.select {
-    size: 40px;
-}
-
-div.styling {
-    color: rgb(237, 104, 15);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 50px;
-}
-
-#styling.text {
-    background: transparent;
-}
-
-div.top {
-    color: black;
+a:hover {
+    text-decoration: underline;
 }
 
 a {
+    text-decoration: none;
     color: aquamarine;
 }
 
-h2 {
-    text-align: center;
-    text-decoration: none;
-}
-
-h2.a {
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-div.styling {
-    text-align: center;
-}
-
-#para {
-    color: darkblue;
-}
-
-.styling {
-    box-sizing: border-box;
-    border: 12px;
+#navicon {
+    color: black;
     align-items: center;
-    justify-content: center;
-    background-color: seagreen;
 }
 
-h1 {
-    margin-top:20px;
+#value {
+    height: 24px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#value::placeholder {
+    text-align: center;
+    color: rgb(191, 189, 189);
+    font-size: 20px;
+}
+
+#value:focus {
+    outline: none;
+}
+
+#iconb1{
+    background: transparent;
+    border:none;
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+#name {
+    margin-top: 20px;
     text-align: center;
     justify-content: center;
     color: #aa4203;
@@ -213,13 +91,7 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h2 {
-    color: #4c236a;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-#p1{
+#p1 {
     background-image: url('https://media.istockphoto.com/id/1294603953/vector/abstract-black-stripes-diagonal-background.jpg?s=612x612&w=0&k=20&c=nQZHTk-o97cNVqWnUe8BJg0A5jQG0tqylquzbt9YtcQ=');
     background-repeat: no-repeat;
     color: red;
@@ -232,4 +104,3 @@ h2 {
     margin-top: 6%;
     border-radius: 12px;
 }
-
