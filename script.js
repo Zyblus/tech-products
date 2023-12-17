@@ -9,7 +9,7 @@ function myfun() {
         window.location.href = 'index1.html';
     }
 
-    else if (a === "mobile" || a === "mobiles" || a === "phones" || a === "phone" || a === "Phone" || a === " PHONES" || a === "Mobile" || a === "Mobiles") {
+    else if (a === "mobile" || a === "mobiles" || a === "phones" || a === "phone" || a === "Phone" || a === " PHONES" || a === "Mobile" || a === "Mobiles" || a==="Smartphones" || a==="smartphones") {
         window.location.href = 'index2.html';
     }
 
