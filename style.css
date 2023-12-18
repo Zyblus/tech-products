@@ -12,10 +12,10 @@ body {
 
 .wrapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     height: 100%;
     background-color: whitesmoke;
-    margin: 0 auto;
+    margin: 0;
 }
     /* url("https://wallpaperbat.com/img/395253-cool-tech-wallpaper.jpg") */
     /* Set a maximum width to avoid stretching on large screens */
