@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("https://wallpaperbat.com/img/395253-cool-tech-wallpaper.jpg");
+    background-color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -13,8 +13,11 @@ body {
 .wrapper {
     width: 100%;
     max-width: 1200px;
-    /* Set a maximum width to avoid stretching on large screens */
+    height: 100%;
+    background-color: whitesmoke;
     margin: 0 auto;
+    /* url("https://wallpaperbat.com/img/395253-cool-tech-wallpaper.jpg") */
+    /* Set a maximum width to avoid stretching on large screens */
     /* Center the container */
 }
 
