@@ -1,197 +1,204 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Zyblus-Laptops</title>
     <script src="script1.js"></script>
-    <link rel="stylesheet" href="style1.css">
-</head>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <div class="heading">
-            <h1>
-                Ultimate Guide to the Best Laptops
-            </h1>
+      <div class="heading">
+        <h1>Ultimate Guide to the Best Laptops</h1>
+        <h2 id="h2">Click image for comparison</h2>
+      </div>
+      <div class="nav2">
+        <input
+          onkeyup="searchenter()"
+          type="text"
+          id="search-box"
+          placeholder="Search-here"
+        />
+        <button onclick="searchfun()">
+          <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
 
-            <h2 id="h2">
-                Click image for comparison
-            </h2>
-        </div>
-
-        <div id="laptops">
-
-            <div id="catagories">
-
-                <div class="options1">
-                    <!-- //1 -->
-                    <div id="background1">
-
-                        <img onclick="myfun1()" class='maintain' src="acer nitro 5.png">
-                        <h2 onclick="myfun1()">Acer nitro 5</h2>
-                    </div>
-
-                    <div id="overlay1" onclick="myfun1()">
-                        <div id="listmaintain1">
-                            <ul id="listing">
-                                <li>Processor:Ryzen 5 5600H</li>
-                                <li>Graphics card:Nvidia GeForce GTX 1650</li>
-                                <li>Display:15.6" (1920x1080) IPS 144Hz</li>
-                                <li>Memory:8GB (Expandable upto 32GB)</li>
-                                <li>Storage: 1TB SSD</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- //2 -->
-                    <div id="background2">
-                        <img onclick="myfun2()" class='maintain' src="lenovo loq 15.png">
-                        <h2 onclick="myfun2()">Lenovo LOQ 15</h2>
-                    </div>
-                    <div id="overlay2" onclick="myfun2()">
-                        <div id="listmaintain2">
-                            <ul id="listing">
-                                <li>Processor:Intel® Core™ i5-13420H</li>
-                                <li>Graphics card:NVIDIA® GeForce RTX™ 3050</li>
-                                <li>Display:15.6" FHD(1920 x 1080), IPS 144Hz</li>
-                                <li>Memory:8 GB DDR5</li>
-                                <li>Storage:1 TB SSD</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- //3 -->
-
-                    <div id="background3">
-                        <img onclick="myfun3()" class='maintain' src="MSI GF63.png">
-                        <h2 onclick="myfun3()">MSI GF63</h2>
-                    </div>
-                    <div id="overlay3" onclick="myfun3()">
-                        <div id="listmaintain3">
-                            <ul id="listing">
-                                <li>Processor:Intel® HM470</li>
-                                <li> Graphics card:NVIDIA® GeForce® GTX 1650</li>
-                                <li>Display:15.6" FHD (1920x1080) IPS 144Hz</li>
-                                <li>Memory: 8GB DDR4 (Expandable upto 64GB)</li>
-                                <li>Storage:1TB SSD</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="options2">
-
-                    <!-- //4 -->
-                    <div id="background4">
-
-                        <img onclick="myfun4()" class='maintain' src="hp victus 16.png">
-                        <h2 onclick="myfun4()">HP Victus 16</h2>
-                    </div>
-                    <div id="overlay4" onclick="myfun4()">
-                        <div id="listmaintain4">
-                            <ul id="listing">
-                                <li>Processor:AMD Ryzen™ 5 5600H</li>
-                                <li>Graphics card:NVIDIA® GeForce RTX™ 3050</li>
-                                <li> Display:16.1" FHD (1920 x 1080)IPS 144Hz</li>
-                                <li> Memory:8 GB DDR4</li>
-                                <li>Storage:256 GB Hard drive</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- //5 -->
-                    <div id="background5">
-                        <img onclick="myfun5()" class='maintain' src="lonovo legion 5.png">
-                        <h2 onclick="myfun5()">Lenovo Legion 5</h2>
-                    </div>
-                    <div id="overlay5" onclick="myfun5()">
-                        <div id="listmaintain5">
-                            <ul id="listing">
-                                <li>Processor: AMD Ryzen 7 5800H</li>
-                                <li> Graphics card:NVIDIA RTX 3050 Ti</li>
-                                <li> Display:15.6" FHD 165Hz</li>
-                                <li>Memory:16GB</li>
-                                <li> Storage:512GB</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- //6 -->
-                    <div id="background6">
-                        <img onclick="myfun6()" class='maintain' src="msi gf63 thin 10sc.png">
-                        <h2 onclick="myfun6()">MSI GF63 Thin 10SC</h2>
-                    </div>
-                    <div id="overlay6" onclick="myfun6()">
-                        <div id="listmaintain6">
-                            <ul id="listing">
-                                <li>Processor:Intel Core i5-10300H</li>
-                                <li>Graphics card:NVIDIA GeForce GTX 1650 Max-Q</li>
-                                <li>Display:15.6-inch IPS display with FHD</li>
-                                <li>Memory:8GB</li>
-                                <li>Storage:512GB</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="options3">
-
-                    <!-- //7 -->
-                    <div id="background7">
-
-                        <img onclick="myfun7()" class='maintain' src="hp victus 15.png">
-                        <h2 onclick="myfun7()">HP Victus 15</h2>
-                    </div>
-                    <div id="overlay7" onclick="myfun7()">
-                        <div id="listmaintain7">
-                            <ul id="listing">
-                                <li>Processor:Intel Core i5-12450H</li>
-                                <li>Graphics card:NVIDIA GeForce GTX 1650</li>
-                                <li>Display:15.6-inch IPS 144Hz</li>
-                                <li>Memory:16GB DDR4</li>
-                                <li>Storage:512GB SSD</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- //8 -->
-                    <div id="background8">
-                        <img onclick="myfun8()" class='maintain' src="asus tuf f15.png">
-                        <h2 onclick="myfun8()">ASUS TUF F15</h2>
-                    </div>
-                    <div id="overlay8" onclick="myfun8()">
-                        <div id="listmaintain8">
-                            <ul id="listing">
-                                <li>Processor:Intel Core i5-10300H</li>
-                                <li>Graphics card:NVIDIA GTX 1650</li>
-                                <li>Display:15.6" FHD IPS 144Hz</li>
-                                <li>Memory:8GB DDR4</li>
-                                <li>Storage:512GB SSD</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- //9 -->
-                    <div id="background9">
-                        <img onclick="myfun9()" class='maintain' src="rog strix g15.png">
-                        <h2 onclick="myfun9()">ROG Strix G15</h2>
-                    </div>
-                    <div id="overlay9" onclick="myfun9()">
-                        <div id="listmaintain9">
-                            <ul id="listing">
-                                <li>Processor:Intel Core i7-10750H</li>
-                                <li>Graphics card:NVIDIA® GeForce® GTX 1660Ti 6GB GDDR6</li>
-                                <li>Display:15.6" FHD IPS 240Hz</li>
-                                <li>Memory:16GB DDR4 32GB(max)</li>
-                                <li>Storage:512GB / 1TB</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
+      <div id="laptops">
+        <div class="options1">
+          <div class="lapt1">
+            <div id="background1">
+              <img onclick="myfun1()" class="maintain" src="acer nitro 5.png" />
+              <h2 onclick="myfun1()">Acer nitro 5</h2>
             </div>
-        </div>
-    </div>
-</body>
 
+            <div id="overlay1" onclick="myfun1()">
+              <ul id="listing">
+                <li>Processor:Ryzen 5 5600H</li>
+                <li>Graphics card:Nvidia GeForce GTX 1650</li>
+                <li>Display:15.6" (1920x1080) IPS 144Hz</li>
+                <li>Memory:8GB (Expandable upto 32GB)</li>
+                <li>Storage: 1TB SSD</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lapt2">
+            <div id="background2">
+              <img
+                onclick="myfun2()"
+                class="maintain"
+                src="lenovo loq 15.png"
+              />
+              <h2 onclick="myfun2()">Lenovo LOQ 15</h2>
+            </div>
+            <div id="overlay2" onclick="myfun2()">
+              <ul id="listing">
+                <li>Processor:Intel® Core™ i5-13420H</li>
+                <li>Graphics card:NVIDIA® GeForce RTX™ 3050</li>
+                <li>Display:15.6" FHD(1920 x 1080), IPS 144Hz</li>
+                <li>Memory:8 GB DDR5</li>
+                <li>Storage:1 TB SSD</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lapt3">
+            <div id="background3">
+              <img onclick="myfun3()" class="maintain" src="MSI GF63.png" />
+              <h2 onclick="myfun3()">MSI GF63</h2>
+            </div>
+            <div id="overlay3" onclick="myfun3()">
+              <ul id="listing">
+                <li>Processor:Intel® HM470</li>
+                <li>Graphics card:NVIDIA® GeForce® GTX 1650</li>
+                <li>Display:15.6" FHD (1920x1080) IPS 144Hz</li>
+                <li>Memory: 8GB DDR4 (Expandable upto 64GB)</li>
+                <li>Storage:1TB SSD</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="options2">
+          <div class="lapt4">
+            <div id="background4">
+              <img onclick="myfun4()" class="maintain" src="hp victus 16.png" />
+              <h2 onclick="myfun4()">HP Victus 16</h2>
+            </div>
+            <div id="overlay4" onclick="myfun4()">
+              <ul id="listing">
+                <li>Processor:AMD Ryzen™ 5 5600H</li>
+                <li>Graphics card:NVIDIA® GeForce RTX™ 3050</li>
+                <li>Display:16.1" FHD (1920 x 1080)IPS 144Hz</li>
+                <li>Memory:8 GB DDR4</li>
+                <li>Storage:256 GB Hard drive</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lapt5">
+            <div id="background5">
+              <img
+                onclick="myfun5()"
+                class="maintain"
+                src="lonovo legion 5.png"
+              />
+              <h2 onclick="myfun5()">Lenovo Legion 5</h2>
+            </div>
+            <div id="overlay5" onclick="myfun5()">
+              <ul id="listing">
+                <li>Processor: AMD Ryzen 7 5800H</li>
+                <li>Graphics card:NVIDIA RTX 3050 Ti</li>
+                <li>Display:15.6" FHD 165Hz</li>
+                <li>Memory:16GB</li>
+                <li>Storage:512GB</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lapt6">
+            <div id="background6">
+              <img
+                onclick="myfun6()"
+                class="maintain"
+                src="msi gf63 thin 10sc.png"
+              />
+              <h2 onclick="myfun6()">MSI GF63 Thin 10SC</h2>
+            </div>
+            <div id="overlay6" onclick="myfun6()">
+              <ul id="listing">
+                <li>Processor:Intel Core i5-10300H</li>
+                <li>Graphics card:NVIDIA GeForce GTX 1650 Max-Q</li>
+                <li>Display:15.6-inch IPS display with FHD</li>
+                <li>Memory:8GB</li>
+                <li>Storage:512GB</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="options3">
+          <div class="lapt7">
+            <div id="background7">
+              <img onclick="myfun7()" class="maintain" src="hp victus 15.png" />
+              <h2 onclick="myfun7()">HP Victus 15</h2>
+            </div>
+            <div id="overlay7" onclick="myfun7()">
+              <ul id="listing">
+                <li>Processor:Intel Core i5-12450H</li>
+                <li>Graphics card:NVIDIA GeForce GTX 1650</li>
+                <li>Display:15.6-inch IPS 144Hz</li>
+                <li>Memory:16GB DDR4</li>
+                <li>Storage:512GB SSD</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lapt8">
+            <div id="background8">
+              <img onclick="myfun8()" class="maintain" src="asus tuf f15.png" />
+              <h2 onclick="myfun8()">ASUS TUF F15</h2>
+            </div>
+            <div id="overlay8" onclick="myfun8()">
+              <ul id="listing">
+                <li>Processor:Intel Core i5-10300H</li>
+                <li>Graphics card:NVIDIA GTX 1650</li>
+                <li>Display:15.6" FHD IPS 144Hz</li>
+                <li>Memory:8GB DDR4</li>
+                <li>Storage:512GB SSD</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lapt9">
+            <div id="background9">
+              <img
+                onclick="myfun9()"
+                class="maintain"
+                src="rog strix g15.png"
+              />
+              <h2 onclick="myfun9()">ROG Strix G15</h2>
+            </div>
+            <div id="overlay9" onclick="myfun9()">
+              <ul id="listing">
+                <li>Processor:Intel Core i7-10750H</li>
+                <li>Graphics card:NVIDIA® GeForce® GTX 1660Ti 6GB GDDR6</li>
+                <li>Display:15.6" FHD IPS 240Hz</li>
+                <li>Memory:16GB DDR4 32GB(max)</li>
+                <li>Storage:512GB / 1TB</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
