@@ -1,203 +1,228 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Zyblus-Smartphones</title>
     <script src="script2.js"></script>
-    <link rel="stylesheet" href="style2.css">
-</head>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-    <div id="Phones">
-        <div class="heading">
-            <h1>
-                Ultimate Guide to the Best Phones
-            </h1>
-            <h2 id="h2">
-                Click image for comparison
-            </h2>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <h1>ULTIMATE GUIDE TO THE BEST PHONES</h1>
+        <h2 id="h2">Click image for comparison</h2>
+      </div>
+      <div class="nav2">
+        <input
+          onkeyup="searchenter()"
+          type="text"
+          id="search-box"
+          placeholder="Search-here"
+        />
+        <button onclick="searchfun()">
+          <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div id="phones">
+        <div class="options1">
+          <div class="phon1">
+            <div id="background1">
+              <img
+                onclick="myfun1()"
+                class="maintain"
+                src="iPhone15_Pro_Titanium.png"
+              />
+              <h2 onclick="myfun1()">iPhone 15 Pro Max</h2>
+            </div>
+
+            <div id="overlay1" onclick="myfun1()">
+              <ul id="listing">
+                <li>PROCESSOR:Apple A17 Pro (3 nm)</li>
+                <li>GPU:Apple GPU (6-core graphics)</li>
+                <li>
+                  DISPLAY:6.7 "LTPO Super Retina XDR OLED, 120Hz, 1000-2000 nits
+                </li>
+                <li>MEMORY:8GB,8GB,8GB</li>
+                <li>STORAGE:256GB,512GB,1TB</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="phon2">
+            <div id="background2">
+              <img
+                onclick="myfun2()"
+                class="maintain"
+                src="realme 10 pro +.png"
+              />
+              <h2 onclick="myfun2()">Realme 10 Pro+</h2>
+            </div>
+            <div id="overlay2" onclick="myfun2()">
+              <ul id="listing">
+                <li>PROCESSOR:Dimensity 1080 (6nm)</li>
+                <li>GPU:Mali-G68 MC4</li>
+                <li>DISPLAY:6.7" AMOLED, HDR10+, 120Hz, 800 nits</li>
+                <li>MEMORY:8GB,8GB,12GB</li>
+                <li>STORAGE:128GB,256GB,256GB</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="phon3">
+            <div id="background3">
+              <img
+                onclick="myfun3()"
+                class="maintain"
+                src="samsung galaxy f54.png"
+              />
+              <h2 onclick="myfun3()">Samsung Galaxy F54</h2>
+            </div>
+
+            <div id="overlay3" onclick="myfun3()">
+              <ul id="listing">
+                <li>PROCESSOR:Exynos 1380 (5 nm)</li>
+                <li>GPU:Mali-G68</li>
+                <li>DISPLAY:6.7" Super AMOLED Plus, 120Hz</li>
+                <li>MEMORY:8GB</li>
+                <li>STORAGE:256GB</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-
-        <div id="catagories">
-
-            <div class="options1">
-                <!-- //1 -->
-                <div id="background1">
-
-                    <img onclick="myfun1()" class='maintain' src="iPhone15_Pro_Titanium.png">
-                    <h2 onclick="myfun1()">Apple iPhone 15 Pro Max</h2>
-                </div>
-
-                <div id="overlay1" onclick="myfun1()">
-                    <div id="listmaintain1">
-                        <ul id="listing">
-                            <li>PROCESSOR:Apple A17 Pro (3 nm)</li>
-                            <li>GPU:Apple GPU (6-core graphics)</li>
-                            <li>DISPLAY:6.7 "LTPO Super Retina XDR OLED, 120Hz, 1000-2000 nits</li>
-                            <li>MEMORY:8GB,8GB,8GB</li>
-                            <li>STORAGE:256GB,512GB,1TB</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- //2 -->
-                <div id="background2">
-                    <img onclick="myfun2()" class='maintain' src="realme 10 pro +.png">
-                    <h2 onclick="myfun2()">Realme 10 Pro+</h2>
-                </div>
-                <div id="overlay2" onclick="myfun2()">
-                    <div id="listmaintain2">
-                        <ul id="listing">
-                            <li>PROCESSOR:Dimensity 1080 (6nm)</li>
-                            <li>GPU:Mali-G68 MC4</li>
-                            <li>DISPLAY:6.7" AMOLED, HDR10+, 120Hz, 800 nits</li>
-                            <li>MEMORY:8GB,8GB,12GB</li>
-                            <li>STORAGE:128GB,256GB,256GB</li>
-                        </ul>
-                    </div>
-
-                </div>
-                <!-- //3 -->
-                <div id="background3">
-                    <img onclick="myfun3()" class='maintain' src="samsung galaxy f54.png">
-                    <h2 onclick="myfun3()">Samsung Galaxy F54</h2>
-                </div>
-
-                <div id="overlay3" onclick="myfun3()">
-                    <div id="listmaintain3">
-                        <ul id="listing">
-                            <li>PROCESSOR:Exynos 1380 (5 nm)</li>
-                            <li>GPU:Mali-G68 </li>
-                            <li>DISPLAY:6.7" Super AMOLED Plus, 120Hz</li>
-                            <li>MEMORY:8GB</li>
-                            <li>STORAGE:256GB</li>
-                        </ul>
-                    </div>
-
-                </div>
+        <div class="options2">
+          <div class="phon4">
+            <div id="background4">
+              <img
+                onclick="myfun4()"
+                class="maintain"
+                src="Xiaomi-12-Lite.png"
+              />
+              <h2 onclick="myfun4()">Xiaomi 12 Lite</h2>
             </div>
 
-            <div class="options2">
+            <div id="overlay4" onclick="myfun4()">
+              <ul id="listing">
+                <li>PROCESSOR:Snapdragon 778G 5G (6 nm)</li>
+                <li>GPU:Adreno 642L</li>
+                <li>DISPLAY:6.55" AMOLED, 120Hz</li>
+                <li>MEMORY:6GB, 8GB, 8GB</li>
+                <li>STORAGE:128GB, 128GB, 256GB</li>
+              </ul>
+            </div>
+          </div>
 
-                <!-- //4 -->
-                <div id="background4">
-
-                    <img onclick="myfun4()" class='maintain' src="Xiaomi-12-Lite.png">
-                    <h2 onclick="myfun4()">Xiaomi 12 Lite</h2>
-                </div>
-
-                <div id="overlay4" onclick="myfun4()">
-                    <div id="listmaintain4">
-                        <ul id="listing">
-                            <li>PROCESSOR:Snapdragon 778G 5G (6 nm)</li>
-                            <li>GPU:Adreno 642L</li>
-                            <li>DISPLAY:6.55" AMOLED, 120Hz</li>
-                            <li>MEMORY:6GB, 8GB, 8GB</li>
-                            <li>STORAGE:128GB, 128GB, 256GB</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- //5 -->
-                <div id="background5">
-                    <img onclick="myfun5()" class='maintain' src="redmi note 12 pro 5g.png">
-                    <h2 onclick="myfun5()">Redmi Note 12 Pro 5G</h2>
-                </div>
-
-                <div id="overlay5" onclick="myfun5()">
-                    <div id="listmaintain5">
-                        <ul id="listing">
-                            <li>PROCESSOR:Dimensity 1080 (6nm)</li>
-                            <li>GPU:Mali-G68</li>
-                            <li>DISPLAY:6.67" AMOLED, 120Hz</li>
-                            <li>MEMORY:6GB, 8GB, 8GB, 12GB</li>
-                            <li>STORAGE:128GB, 128GB, 256GB, 256GB</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- //6 -->
-                <div id="background6">
-                    <img onclick="myfun6()" class='maintain' src="realme 9 pro +.png">
-                    <h2 onclick="myfun6()">Realme 9 Pro+</h2>
-                </div>
-
-                <div id="overlay6" onclick="myfun6()">
-                    <div id="listmaintain6">
-                        <ul id="listing">
-                            <li>PROCESSOR:Snapdragon 695 5G (6nm)</li>
-                            <li>GPU:Adreno 619</li>
-                            <li>DISPLAY:6.6" IPS LCD, 120Hz</li>
-                            <li>MEMORY:6GB, 8GB</li>
-                            <li>STORAGE:128GB, 128GB</li>
-                        </ul>
-                    </div>
-                </div>
-
+          <div class="phon5">
+            <div id="background5">
+              <img
+                onclick="myfun5()"
+                class="maintain"
+                src="redmi note 12 pro 5g.png"
+              />
+              <h2 onclick="myfun5()">Redmi Note 12 Pro 5G</h2>
             </div>
 
-            <div class="options3">
+            <div id="overlay5" onclick="myfun5()">
+              <ul id="listing">
+                <li>PROCESSOR:Dimensity 1080 (6nm)</li>
+                <li>GPU:Mali-G68</li>
+                <li>DISPLAY:6.67" AMOLED, 120Hz</li>
+                <li>MEMORY:6GB, 8GB, 8GB, 12GB</li>
+                <li>STORAGE:128GB, 128GB, 256GB, 256GB</li>
+              </ul>
+            </div>
+          </div>
 
-                <!-- //7 -->
-                <div id="background7">
-
-                    <img onclick="myfun7()" class='maintain' src="oneplus nord ce 3 lite.png">
-                    <h2 onclick="myfun7()">OnePlus Nord CE 3 Lite</h2>
-                </div>
-
-                <div id="overlay7" onclick="myfun7()">
-                    <div id="listmaintain7">
-                        <ul id="listing">
-                            <li>PROCESSOR:Snapdragon 695 5G (6nm)</li>
-                            <li>GPU:Adreno 619</li>
-                            <li>DISPLAY:6.72" IPS LCD, 120Hz</li>
-                            <li>MEMORY:8GB, 8GB</li>
-                            <li>STORAGE:128GB, 256GB</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- //8 -->
-                <div id="background8">
-                    <img onclick="myfun8()" class='maintain' src="samsung galaxy a33 5g.png">
-                    <h2 onclick="myfun8()">Samsung Galaxy A33 5G</h2>
-                </div>
-
-                <div id="overlay8" onclick="myfun8()">
-                    <div id="listmaintain8">
-                        <ul id="listing">
-                            <li>PROCESSOR:Exynos 1280 (5nm)</li>
-                            <li>GPU:Mali-G68</li>
-                            <li>DISPLAY:6.4" Super AMOLED, 90Hz</li>
-                            <li>MEMORY:4GB, 6GB</li>
-                            <li>STORAGE:128GB, 128GB</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- //9 -->
-                <div id="background9">
-                    <img onclick="myfun9()" class='maintain' src="honor x9a.png">
-                    <h2 onclick="myfun9()">Honor X9a</h2>
-                </div>
-
-                <div id="overlay9" onclick="myfun9()">
-                    <div id="listmaintain9">
-                        <ul id="listing">
-                            <li>PROCESSOR:Snapdragon 695 5G (6nm)</li>
-                            <li>GPU:Adreno 619</li>
-                            <li>DISPLAY:6.67" AMOLED, 120Hz</li>
-                            <li>MEMORY:6GB, 8GB, 8GB</li>
-                            <li>STORAGE:128GB, 128GB, 256GB</li>
-                        </ul>
-                    </div>
-                </div>
-
+          <div class="phon6">
+            <div id="background6">
+              <img
+                onclick="myfun6()"
+                class="maintain"
+                src="realme 9 pro +.png"
+              />
+              <h2 onclick="myfun6()">Realme 9 Pro+</h2>
             </div>
 
+            <div id="overlay6" onclick="myfun6()">
+              <ul id="listing">
+                <li>PROCESSOR:Snapdragon 695 5G (6nm)</li>
+                <li>GPU:Adreno 619</li>
+                <li>DISPLAY:6.6" IPS LCD, 120Hz</li>
+                <li>MEMORY:6GB, 8GB</li>
+                <li>STORAGE:128GB, 128GB</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        <div class="options3">
+          <div class="phon7">
+            <div id="background7">
+              <img
+                onclick="myfun7()"
+                class="maintain"
+                src="oneplus nord ce 3 lite.png"
+              />
+              <h2 onclick="myfun7()">OnePlus Nord CE 3</h2>
+            </div>
+
+            <div id="overlay7" onclick="myfun7()">
+              <ul id="listing">
+                <li>PROCESSOR:Snapdragon 695 5G (6nm)</li>
+                <li>GPU:Adreno 619</li>
+                <li>DISPLAY:6.72" IPS LCD, 120Hz</li>
+                <li>MEMORY:8GB, 8GB</li>
+                <li>STORAGE:128GB, 256GB</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="phon8">
+            <div id="background8">
+              <img
+                onclick="myfun8()"
+                class="maintain"
+                src="samsung galaxy a33 5g.png"
+              />
+              <h2 onclick="myfun8()">Samsung Galaxy A33</h2>
+            </div>
+
+            <div id="overlay8" onclick="myfun8()">
+              <ul id="listing">
+                <li>PROCESSOR:Exynos 1280 (5nm)</li>
+                <li>GPU:Mali-G68</li>
+                <li>DISPLAY:6.4" Super AMOLED, 90Hz</li>
+                <li>MEMORY:4GB, 6GB</li>
+                <li>STORAGE:128GB, 128GB</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="phon9">
+            <div id="background9">
+              <img onclick="myfun9()" class="maintain" src="honor x9a.png" />
+              <h2 onclick="myfun9()">Honor X9a</h2>
+            </div>
+
+            <div id="overlay9" onclick="myfun9()">
+              <ul id="listing">
+                <li>PROCESSOR:Snapdragon 695 5G (6nm)</li>
+                <li>GPU:Adreno 619</li>
+                <li>DISPLAY:6.67" AMOLED, 120Hz</li>
+                <li>MEMORY:6GB, 8GB, 8GB</li>
+                <li>STORAGE:128GB, 128GB, 256GB</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
