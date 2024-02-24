@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="calccss.css">
+    <script src="calcjs.js"></script>
+    <title>
+        calculator
+    </title>
+</head>
+
+
+<body>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="inputbox" readonly>
+        <div>
+            <button onclick="clearall()">AC</button>
+            <button onclick="slice()">DEL</button>
+            <button onclick="appendtoinput('%')">%</button>
+            <button onclick="appendtoinput('/')">/</button>
+        </div>
+
+        <div>
+            <button onclick="appendtoinput('7')">7</button>
+            <button onclick="appendtoinput('8')">8</button>
+            <button onclick="appendtoinput('9')">9</button>
+            <button onclick="appendtoinput('*')">×</button>
+        </div>
+
+        <div>
+            <button onclick="appendtoinput('4')">4</button>
+            <button onclick="appendtoinput('5')">5</button>
+            <button onclick="appendtoinput('6')">6</button>
+            <button onclick="appendtoinput('-')">-</button>
+        </div>
+
+        <div>
+            <button onclick="appendtoinput('1')">1</button>
+            <button onclick="appendtoinput('2')">2</button>
+            <button onclick="appendtoinput('3')">3</button>
+            <button onclick="appendtoinput('+')">+</button>
+        </div>
+
+        <div>
+            <button onclick="appendtoinput('00')">00</button>
+            <button onclick="appendtoinput('0')">0</button>
+            <button onclick="appendtoinput('.')">.</button>
+            <button onclick="result()">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
