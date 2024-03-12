@@ -81,7 +81,7 @@
     border: 4px solid black;
 }
 
-@media(width:600px)
+@media(max-width:600px)
 {
     .nav{
         height:16px;
