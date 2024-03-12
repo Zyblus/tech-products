@@ -83,8 +83,8 @@
 
 @media(max-width:600px)
 {
-    .nav{
-        height:70px;
+    .heading{
+        height:8vw;
     }
     #value,#b1{
             margin-top: 20px;
