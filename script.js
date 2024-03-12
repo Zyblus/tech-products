@@ -26,7 +26,11 @@ function myfun() {
     window.location.href = "index2.html";
   } else if (a === "CALCULATOR" || a == "calculator") {
     window.location.href = "calculator.html";
-  } else if (a != "") {
+  }
+  else if (a === "youtube" || a === "Youtube" || a === "YOUTUBE") {
+    window.location.href = "youtube.html";
+  }
+  else if (a != "") {
     alert("Items not found.");
   }
 }
@@ -64,6 +68,9 @@ function myfun1() {
     (a === "CALCULATOR" || a === "calculator" || a === "Calculator")
   ) {
     window.location.href = "calculator.html";
+  }
+  else if (a === "youtube" || a === "Youtube" || a === "YOUTUBE") {
+    window.location.href = "youtube.html";
   } else if (event.key === "Enter" && a != "") {
     alert("Items not found.");
   }
